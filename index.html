@@ -20,11 +20,14 @@
     }
 
     .text-1{
-        color: red;
+        position: absolute;
+        right: 0;
+        top: 0;
         text-align: center;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: red;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-weight: 900;
-        font-size: 50px;
+        font-size: 40px;
         animation: text 5s linear infinite;
     }
     @keyframes text {
@@ -36,13 +39,26 @@
         }
     }
 
-    .ico-1{
-        text-align: center;
+    .a-2{
+        position: relative;
+        left: 15%;
         border: 0%;
     }
 
-    .ico-2{
+    .a-3{
         text-align: center;
+    }
+
+
+    .img12{
+        padding: 40px;
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+        border: 0%;
+        border-radius: 50px;
+        width: 280px;
+        animation: image 3s linear infinite;
     }
 
     .img11{
@@ -75,20 +91,47 @@
         height: 220px;
     }
 
+    #image{
+        position: fixed;
+        top: 30%;
+        left: 2%;
+        scale: .6;
+    }
+    @keyframes image{
+        from{
+            filter: hue-rotate(360deg);
+        }
+        to{
+            transform: matrix(0.7, -0.5, 0.4, 0.4, 0.6, 0.5);
+        }
+    }
+
+    h3{
+        position: fixed;
+        top: 30%;
+        left: 15%;
+        box-shadow: inset 0 0 150px goldenrod;
+        border-radius: 50px;
+        width: 320px;
+        transform: rotate(25deg);
+        text-align: center;
+        font-size: 50px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: blue;
+        animation: image 5s linear infinite;
+    }
 </style>
 
 
 <body>
-    <div class="a-1">
-        <h1 class="text-1">not connected</h1>
-    </div>
-    <div class="ico-1"><img class="img-ico" src="ico-1.png" alt=""></div>
-    <div class="ico-2">
-        <img class="img11" src="hamad1.jpg" alt="">
+    <div class="a-2"><img class="img-ico" src="ico-1.png" alt=""></div>
+    <div class="a-3">
+        <img class="img12" id="image" src="hamad1.jpg" alt="">
         <img class="img11" src="2044.jpg" alt="">
     </div>
         <iframe class="if1" src="https://hellafi1992.github.io/hello/" frameborder="0"></iframe>
         <iframe class="if2" src="https://hellafi1992.github.io/70/" frameborder="0"></iframe>
     
+        <h3>جار تطوير الموقع</h3>
 </body>
 </html>
